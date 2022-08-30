@@ -29,7 +29,7 @@
       <div class="row mt-3">
         <div class="col-xs-12">
           <button class="btn btn-success" type="submit" [disabled]="!f.valid">
-            Add
+            {{ editMode ? "Update" : "Add" }}
           </button>
           <button class="btn btn-danger ms-1" type="button">Delete</button>
           <button class="btn btn-primary ms-1" type="button">Clear</button>
