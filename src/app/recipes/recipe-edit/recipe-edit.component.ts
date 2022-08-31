@@ -64,7 +64,7 @@ export class RecipeEditComponent implements OnInit {
     } else {
       this.recipeService.addRecipe(this.recipeForm.value);
     }
-
+    this.onCancel()
   }
 
   get controls() { // a getter!
